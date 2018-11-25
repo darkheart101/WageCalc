@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:text="Καθαρό Ποσό"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/netAmount"
+            android:text="0.0"
+            android:layout_marginLeft="5dp"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:layout_width="236dp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dip" >
+
+        <TextView
+            android:id="@+id/lblParakratisi"
+            android:text="Παρακρ. 20%"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtWithHoldingAmount"
+            android:text="0.0"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dip" >
+
+        <TextView
+            android:id="@+id/lblVAT"
+            android:text="ΦΠΑ 24%"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtTax"
+            android:text="0.0"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp" />
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dip" >
+
+        <TextView
+            android:id="@+id/lblMixed"
+            android:text="Μεικτό"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtMixed"
+            android:text="0.0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dip" >
+
+        <TextView
+            android:id="@+id/lblIncomingTransfer"
+            android:text="Εισερχόμενο έμβασμα"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/txIncomingTransfer"
+            android:text="0.0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAlignment="center"
+            android:textSize="18sp"
+             />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowCalcButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="7dip" >
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:text="Υπολογισμος"
+            android:layout_weight="1"
+             />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRowClearButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="7dip" >
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:text="Καθαρισμος"
+            android:layout_weight="1"
+            />
+    </TableRow>
+
+</TableLayout>
